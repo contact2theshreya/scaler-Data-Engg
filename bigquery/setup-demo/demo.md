@@ -1,0 +1,16 @@
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/eed31b98-f0e7-4784-a409-df5bb33aa8b2" />
+
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/c6f148f8-33ab-4b30-b3f6-776710fee0a6" />
+
+<img width="488" alt="image" src="https://github.com/user-attachments/assets/95bb9ed0-6484-4972-b67d-02bdffc6506b" />
+
+<img width="477" alt="image" src="https://github.com/user-attachments/assets/b882a006-f2f2-4562-a2c7-d7c005a95b0c" />
+
+<img width="483" alt="image" src="https://github.com/user-attachments/assets/4be77071-317e-4beb-a5dc-ddbf5e772bb4" />
+
+round(col_value,2)
+
+
+
+
+
