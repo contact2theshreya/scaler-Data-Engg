@@ -10,6 +10,17 @@
 
 round(col_value,2)
 
+SELECT
+       market_date,
+       customer_id,
+       vendor_id,
+       quantity,
+       cost_to_customer_per_qty,
+       quantity * cost_to_customer_per_qty AS total_amount
+  FROM farmers_market.customer_purchases
+  LIMIT 10;
+Here, total_amount is an alias for the calculated field .
+
 
 
 
