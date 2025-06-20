@@ -21,6 +21,14 @@ SELECT
   LIMIT 10;
 Here, total_amount is an alias for the calculated field .
 
+ ## Questions
+1)  Write a query to report the movies with an odd-numbered ID and a description that is not "boring".
+
+Return the result table ordered by rating in descending order.
+
+SELECT * FROM cinema WHERE MOD(id, 2) = 1  AND description != 'boring'
+ORDER BY rating DESC;
+
 
 
 
