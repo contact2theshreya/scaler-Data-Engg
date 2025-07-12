@@ -12,3 +12,41 @@ Right Join (Right Outer Join): Opposite of Left Join, but not commonly used in p
 Full Join (Full Outer Join): Returns all records when there is a match in either left or right table records. MySQL does not support FULL OUTER JOIN directly【4:11†source】.
 
 Self Join: A self join is a regular join but the table is joined with itself. It is often used to query hierarchical data【4:13†source】.
+## example query
+
+SELECT 
+    employee_id,
+    first_name,
+    last_name,
+    salary,
+    CASE 
+        WHEN job_id IN ('FI_ACCOUNT', 'AC_ACCOUNT') THEN 1
+        ELSE 0
+    END AS Accountant
+FROM 
+    employees
+ORDER BY 
+    employee_id ASC;
+
+    /////////////////
+    
+    select employee_id,first_name,last_name,job_id
+from employees E1
+join departments D1
+on E1.department_id=D1.department_id
+join locations L1
+on D1.location_id=L1.location_id
+where L1.city='Seattle';
+
+///////////////////////////
+
+select
+    employee_id,
+    salary,
+    case
+        when salary > 2e4 then 'Class A'
+        when salary < 1e4 then 'Class C'
+        else 'Class B'
+    end as 'Salary_bin'
+from employees
+order by 1;
