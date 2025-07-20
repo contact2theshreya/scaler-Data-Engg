@@ -2,6 +2,8 @@
 
 Short circuiting using exist by checking if any id from any record of 2nd table matches we will not search in entire table and we will return directly true from there and we will then select record from first table
 
+whereas in will compute all recored then return ans , if inner query has limited data then u can use subquery.
+
 ## Non equi join
 
 <img width="444" height="299" alt="image" src="https://github.com/user-attachments/assets/da089841-a553-4938-a2fc-289066ed9699" />
@@ -31,10 +33,18 @@ left join employees e on d.department_id = e.department_id;
 STEP 3: Use the ‘is null’ operator in the where clause to filter the records where there is no working employee.
 
 select d.department_id, d.department_name 
+
+## in normal subquery we store result of inner qury in memory but not in corelated subquery
 from departments d 
 left join employees e 
 on d.department_id = e.department_id 
 WHERE e.department_id is null
 order by d.department_id;
+
+<img width="470" height="50" alt="image" src="https://github.com/user-attachments/assets/8e595ecb-b3d5-4584-a173-d320774cef9d" />
+
+
+ d1.department_name in ( 'Administration', 'Marketing', 'Human Resources');
+
 
 
