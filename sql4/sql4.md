@@ -47,4 +47,5 @@ order by d.department_id;
  d1.department_name in ( 'Administration', 'Marketing', 'Human Resources');
 
 
+<img width="1136" height="455" alt="image" src="https://github.com/user-attachments/assets/69f0af19-17ea-490a-ad3e-8513750d3e23" />
 
