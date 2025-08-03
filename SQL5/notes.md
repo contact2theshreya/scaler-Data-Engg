@@ -1,4 +1,4 @@
-<img width="657" height="410" alt="image" src="https://github.com/user-attachments/assets/2cadc3ab-e2c7-45b0-a9da-8ed164636ef3" />with subquery ( u  run subquery and it iterate all row )for each row\\ - o(n^2)
+with subquery ( u  run subquery and it iterate all row )for each row\\ - o(n^2)
 
 
 with window function entire table is scanned once by storing result in some array -o(n) then main query is run
