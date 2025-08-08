@@ -273,3 +273,17 @@ In this case, a recursive CTE helps fetch an organizational chart from hierarchi
 Both can improve readability and make SQL code more maintainable!
 
 )
+
+Struct only contain variable not function,in table u can have simple datatype or complex dataype coum like Record which is same as struct ex totals are part of many columns.
+
+<img width="1450" height="750" alt="image" src="https://github.com/user-attachments/assets/20ba9044-7c38-41b1-a97b-0a871d680b4a" />
+
+Use of Record 
+
+Problem: Complex relationships between data often require many joins or subqueries, which can lead to complicated SQL queries that are difficult to maintain.
+
+Solution: By grouping related data into a composite or record type, you can simplify your SQL queries and make them more intuitive.
+
+Example: Instead of having to join multiple tables to retrieve an employee's address and contact info, you could retrieve all of this data with a single composite type, which reduces the need for complex joins
+
+<img width="626" height="276" alt="image" src="https://github.com/user-attachments/assets/bc7b9084-7564-4f03-8800-bbb64699f9c5" />
