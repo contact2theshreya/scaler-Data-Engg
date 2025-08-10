@@ -7,3 +7,7 @@ compression has higher efficiency in columnar as we can compress more in columna
 big data uses columnar
 
 we will store 1 year dat6a in OLTP and we move it timely to OLAP
+
+partiotioning is diving data into other machines to make search faster
+
+ingestion partition - data doesn't have timestamp example sensor data so u partition from the time u inserted in table ex u inserted sensor data in June 2025
