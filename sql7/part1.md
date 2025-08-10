@@ -26,3 +26,9 @@ Solution- use CTE
 <img width="349" height="115" alt="image" src="https://github.com/user-attachments/assets/8d78f26b-81a6-4da3-8b0f-d4b4ecf4b3b4" />
 
 index and partition reduce search space
+
+https://claude.ai/public/artifacts/368c9e0c-26b7-4cb0-81f1-15b37531371e?fullscreen=true
+
+https://claude.ai/public/artifacts/bbc7c82d-49aa-466b-890d-8c5689a690e3
+
+https://claude.ai/public/artifacts/19d9c0a7-dff0-4b2e-93d0-5c87811dd36b?fullscreen=true
