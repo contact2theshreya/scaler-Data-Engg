@@ -70,3 +70,29 @@ where (people >= 100 and next1 >= 100 and next2 >= 100) or
 (people >= 100 and prev1 >= 100 and prev2 >= 100) or
 (people >= 100 and prev1 >= 100 and next1 >= 100)
 order by visit_date;
+
+SELECT id, visit_date, people:
+– This line specifies the columns that will be selected and returned in the result set.
+– The query will retrieve the id, visit_date, and people columns.
+
+FROM (SELECT ... ) as mall_ppl:
+– This line introduces a subquery that selects specific columns from the mall table and assigns them aliases.
+– The subquery is given the alias mall_ppl.
+
+SELECT id, visit_date, people, lead(people) over (order by id asc) as next1, lead(people,2) over (order by id asc) as next2, lag(people) over (order by id asc) as prev1, lag(people,2) over (order by id asc) as prev2 from mall:
+– This subquery selects the id, visit_date, and people columns from the mall table.
+– Additionally, it uses window functions to calculate the values for the next two rows and the previous two rows.
+– lead(people) retrieves the value of people in the next row, while lead(people,2) retrieves the value of people in two rows ahead.
+– lag(people) retrieves the value of people in the previous row, while lag(people,2) retrieves the value of people two rows behind.
+– These calculated values are aliased as next1, next2, prev1, and prev2, respectively.
+
+WHERE (people >= 100 and next1 >= 100 and next2 >= 100) or (people >= 100 and prev1 >= 100 and prev2 >= 100) or (people >= 100 and prev1 >= 100 and next1 >= 100):
+– This line specifies the conditions for filtering the result set.
+– It selects rows where people is greater than or equal to 100 and meets one of the following conditions:
+(1) next1, next2, and people in consecutive rows are all greater than or equal to 100, (2) prev1, prev2,
+and people in consecutive rows are all greater than or equal to 100, or (3) prev1, next1,
+and people in consecutive rows are all greater than or equal to 100.
+
+ORDER BY visit_date:
+– This line specifies the order in which the final result set should be sorted.
+– It will sort the result set by the visit_date column in ascending order.
