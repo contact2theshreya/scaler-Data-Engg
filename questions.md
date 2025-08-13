@@ -19,4 +19,54 @@ ORDER BY CUSTOMER_NAME ASC;
 
 3) <img width="869" height="395" alt="image" src="https://github.com/user-attachments/assets/275a0d2b-0e8d-4cc7-a65b-b23c08f7a7eb" />
 
+## window function
 
+PARTITION BY: This optional clause divides the result set into partitions or groups, and the ranking is applied within each partition separately. If omitted, the entire result set is treated as a single partition.
+
+First day of job
+
+In SQL, the FIRST_VALUE() function is a window function used to retrieve the first value in an ordered set of values within a defined window or partition.
+
+select distinct emp.first_name,
+first_value(jhist.start_date) over(partition by jhist.employee_id 
+order by jhist.start_date) as 'first_day_job'
+from job_history jhist 
+join employees emp 
+on jhist.employee_id = emp.employee_id
+order by emp.first_name;
+
+or
+
+select e.first_name, t.start_date as first_day_job from
+(select employee_id, start_date,
+dense_rank() over(partition by employee_id order by start_date) as job_num
+from job_history) t, employees e
+where e.employee_id = t.employee_id
+and t.job_num = 1
+order by e.first_name asc
+
+atlweast 28Years = 
+ DATEDIFF('2022-06-08', hire_date)/365 >= 28
+
+<img width="674" height="306" alt="image" src="https://github.com/user-attachments/assets/8b097a01-aedb-47b5-b12e-14b1ce34f55c" />
+
+
+<img width="744" height="406" alt="image" src="https://github.com/user-attachments/assets/6ba7ba95-a555-44bb-ad86-5f6055edf067" />
+
+
+<img width="672" height="319" alt="image" src="https://github.com/user-attachments/assets/3d637498-8111-4984-a9fc-78e313426b5e" />
+
+
+ select id, visit_date, people
+from
+(select id, visit_date, people, 
+lead(people) over (order by id asc) as next1,
+lead(people,2) over (order by id asc) as next2,
+lag(people)over (order by id asc) as prev1,
+lag(people,2)over (order by id asc) as prev2
+from mall
+)as mall_ppl
+where (people >= 100 and next1 >= 100 and next2 >= 100) or 
+(people >= 100 and prev1 >= 100 and prev2 >= 100) or
+(people >= 100 and prev1 >= 100 and next1 >= 100)
+order by visit_date;
