@@ -15,6 +15,10 @@ LIST the files - hdfs dfs -ls /usr/
 
 <img width="586" height="57" alt="image" src="https://github.com/user-attachments/assets/9b5cb682-0c4a-404e-8d25-74a075b24f16" />
 
+Yarn provides machine to process data
+
+Yarn consist of resource manager, scheduler and application manager
+
 List of files ,Create a directory is name node operation
 
  Write data ,copy data is data  and name node  opeartion
