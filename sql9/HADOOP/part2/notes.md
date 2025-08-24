@@ -28,3 +28,19 @@ Read data is data node operation
 Cut paste/move data is name node operation(it doesn’t move actual data, it only moves file structure tcure)
 
 In copy data we also move data to diff dat node/block
+
+Mapreduce -  A framework for processing massive datasets with a distributed algorithm on a cluster.
+
+Resource manager - Component of YARN that handles resource allocation for applications.
+
+Node manager-YARN's per-node agent responsible for container management and monitoring resource usage.
+
+Application master - Coordinates the execution of an application in a YARN cluster.
+
+Replication factor - Determines the number of copies of data made across nodes for fault tolerance.
+
+Container- A basic unit of allocation in YARN, which can hold a certain amount of computational resource.
+
+Scheduler - Part of YARN responsible for allocating resources based on various algorithms.
+
+HDFS client - Software component allowing user interaction with the HDFS, sending commands to nodes.
