@@ -16,7 +16,11 @@ LIST the files - hdfs dfs -ls /usr/
 <img width="586" height="57" alt="image" src="https://github.com/user-attachments/assets/9b5cb682-0c4a-404e-8d25-74a075b24f16" />
 
 List of files ,Create a directory is name node operation
+
  Write data ,copy data is data  and name node  opeartion
+ 
 Read data is data node operation
+
 Cut paste/move data is name node operation(it doesn’t move actual data, it only moves file structure tcure)
+
 In copy data we also move data to diff dat node/block
