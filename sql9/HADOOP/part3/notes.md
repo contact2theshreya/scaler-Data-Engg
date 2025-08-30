@@ -18,4 +18,27 @@ Data processing for large cluster
 Run the code for mapper reducer with the input dataset
 
 
+MapReduce
+Understanding MapReduce
+Purpose: A framework for processing large datasets in parallel and distributed environments. It breaks down processing into map tasks and reduce tasks【4:3†source】【4:14†source】.
 
+Process:
+
+Map Phase: The input data is divided into several parts which map tasks transform into intermediate key-value pairs.
+
+Shuffle and Sort: Intermediate data is shuffled and sorted to be processed by the reduce phase.
+Reduce Phase: Reduce tasks aggregate and process the intermediate data to produce the final output【4:16†source】.
+
+Analogy for Understanding MapReduce
+
+Election Counting Example:
+
+Map: Tellers segregate votes into categories based on party, akin to how mapping organizes data into key-value pairs【4:14†source】.
+
+Reduce: Tellers count the votes they were responsible for, which is similar to reducing aggregated mapped data sets【4:17†source】.
+
+Use Cases of MapReduce
+
+Ideal for tasks that involve batch processing of large amounts of data.
+
+Successfully employed in situations where operations such as data filtering, aggregation, and summarization are required【4:16†source】.
