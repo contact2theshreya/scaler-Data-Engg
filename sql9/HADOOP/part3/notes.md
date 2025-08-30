@@ -42,3 +42,21 @@ Use Cases of MapReduce
 Ideal for tasks that involve batch processing of large amounts of data.
 
 Successfully employed in situations where operations such as data filtering, aggregation, and summarization are required【4:16†source】.
+
+FTP
+
+File Transfer Protocol used to transfer files from a local to a server machine.
+
+Apache hue
+
+A web interface that provides access to various Hadoop features and data.
+
+Node manager
+
+A component of YARN responsible for managing resources and monitoring node performance.
+
+Application master
+Coordinates tasks and resources for a specific application within YARN.
+
+Serialisation
+The process of converting a data structure into a format that can be transferred over a network or stored.
