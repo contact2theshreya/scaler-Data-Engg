@@ -96,3 +96,16 @@ and people in consecutive rows are all greater than or equal to 100.
 ORDER BY visit_date:
 – This line specifies the order in which the final result set should be sorted.
 – It will sort the result set by the visit_date column in ascending order.
+
+<img width="871" height="283" alt="image" src="https://github.com/user-attachments/assets/a253c126-f5a9-4a15-8910-7d7923e70191" />
+
+<img width="890" height="289" alt="image" src="https://github.com/user-attachments/assets/7218821f-9cf4-43cc-ba50-6674a32c416e" />
+
+<img width="953" height="356" alt="image" src="https://github.com/user-attachments/assets/50836c5c-4fad-411d-ad25-a4a37ebc8237" />
+
+<img width="676" height="115" alt="image" src="https://github.com/user-attachments/assets/defda99c-57f4-44eb-bfd3-423f5fdbff95" />
+
+: Memory leaks can cause a Node Manager to use more resources than it should, even when it is not
+running any containers. It is important to identify and fix memory leaks as soon as possible to prevent performance’
+issues and resource contention in the cluster.
+
