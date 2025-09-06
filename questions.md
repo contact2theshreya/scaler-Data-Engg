@@ -109,3 +109,13 @@ ORDER BY visit_date:
 running any containers. It is important to identify and fix memory leaks as soon as possible to prevent performance’
 issues and resource contention in the cluster.
 
+<img width="1094" height="434" alt="image" src="https://github.com/user-attachments/assets/2c0895b5-1518-4ac7-8449-4cc407138561" />
+
+<img width="1158" height="548" alt="image" src="https://github.com/user-attachments/assets/ac32f8fa-8372-47fe-bf09-638d5cabc5d2" />
+
+<img width="1146" height="676" alt="image" src="https://github.com/user-attachments/assets/e8f19a4b-b0ed-4aa0-a322-5f4e4e010225" />
+
+<img width="1146" height="554" alt="image" src="https://github.com/user-attachments/assets/078501af-ad98-40e0-8ed6-5cc2ce8e8fbc" />
+
+<img width="1168" height="503" alt="image" src="https://github.com/user-attachments/assets/4124c449-1f69-4ce6-ad02-7c50bac8f49f" />
+
