@@ -49,3 +49,42 @@ Metastore: Stores metadata about schemas and partitions, crucial for query optim
 
 Use Case: Airbnb
 Airbnb used Hive to solve substantial data warehousing needs, leveraging its ability to perform detailed analytics on the large datasets they collected. Their infrastructure took advantage of Hive on top of HDFS for efficient storage and retrieval【4:10†source】.
+
+Surrogate Keys
+
+Unique identifier used in dimension tables to manage slowly changing dimensions.
+
+Slowly Changing Dimension (SCD)\
+
+A method to manage changes in dimension table data over time.
+
+Star Schema
+A database schema with one central fact table surrounded by dimension tables.
+
+Snowflake Schema
+A normalized version of the star schema where dimension tables are interconnected.
+
+Galaxy Schema
+A schema that contains multiple fact tables and shared dimension tables, also called a fact constellation.
+
+Data Warehouse
+A central repository for storing large amounts of business data for reporting and analysis.
+
+Fact Table
+A table in a data warehouse that contains quantitative data for analysis.
+
+Dimension Table
+
+A table in a data warehouse that contains descriptive attributes to constrain queries on fact tables.
+
+OLTP
+Online Transaction Processing; refers to systems that manage transaction-oriented applications.
+
+OLAP
+Online Analytical Processing; enables users to analyze multidimensional data interactively.
+
+Data Lakes
+Storage for raw data in its native format, typically used prior to transformation for data warehousing.
+
+ETL (Extract, Transform, Load)
+The process of extracting data, transforming it for analysis, and loading it into a data warehouse.
