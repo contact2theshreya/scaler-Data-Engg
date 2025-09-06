@@ -47,6 +47,35 @@ No wrun with reducer logic instedad of cat
 
 <img width="265" height="275" alt="image" src="https://github.com/user-attachments/assets/bb6cc62f-1aaf-46e9-86e0-41ebc3843bab" />
 
+Container
+Containers are slots which contain RAM, CPU, and the execution engine for logic processing【4:0†source】.
+
+Name node
+A component in HDFS which maintains metadata and directs data block placements
+
+Datanode
+Nodes where actual data is stored in HDFS, organized into blocks
+
+Mapreduce
+Nodes where actual data is stored in HDFS, organized into blocks
+
+Yarn
+Nodes where actual data is stored in HDFS, organized into blocks
+
+HDFS
+Hadoop Distributed File System, used for storing large data sets across multiple nodes
+
+Maop task
+The initial processing task that takes input, parses it into records, and produces a set of intermediate key/value pairs
+
+Reduce task
+Aggregates intermediate data from Map Tasks, sorts and combines it into final results【
+
+Shuffle and sort
+Processes that occur between Map and Reduce phases where output from Mappers are sorted and transferred to Reducers
+
+File input split
+A way Hadoop divides input files into manageable pieces for individual map tasks
 
 
 
