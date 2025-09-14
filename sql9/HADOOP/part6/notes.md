@@ -37,6 +37,13 @@ External table takes carew of
 
 <img width="465" height="54" alt="image" src="https://github.com/user-attachments/assets/346e8bbe-037f-4c73-9265-bd48c835ac7b" />
 
+<img width="611" height="137" alt="image" src="https://github.com/user-attachments/assets/0deb2549-cad1-455e-a45d-2ebb4e141eb6" />
+
+Load dtata in managed table whre Hive is owner, u don't give location of data
+
+<img width="585" height="178" alt="image" src="https://github.com/user-attachments/assets/bea0d3a6-669a-4437-892a-e5a55370f9bb" />
+
+<img width="289" height="131" alt="image" src="https://github.com/user-attachments/assets/75169a66-2197-4791-bc6f-33366d2c5f7b" />
 
 
 
