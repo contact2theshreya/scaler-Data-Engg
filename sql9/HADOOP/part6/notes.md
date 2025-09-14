@@ -14,6 +14,8 @@ Now run query-explain extended <sql_query> to check what are the steps involved
 
 <img width="683" height="338" alt="image" src="https://github.com/user-attachments/assets/36147d91-9749-4146-a7d4-c44d5fc00683" />
 
+Data will be in HDFS and we are mapping data from HDFS to hive table to run qyery in hive
+
 <img width="615" height="344" alt="image" src="https://github.com/user-attachments/assets/2f9f80c2-9284-4885-8992-1d58e8a41e7e" />
 
 craete db using hive
@@ -33,20 +35,30 @@ Now create table inside Hive editor(in same folder query is ther)
 
 <img width="644" height="358" alt="image" src="https://github.com/user-attachments/assets/cace1080-1f4b-463d-96e6-78073707792a" />
 
-External table takes carew of 
+External table()u ownd ata but metadata is own by hive takes carew of 
 
 <img width="465" height="54" alt="image" src="https://github.com/user-attachments/assets/346e8bbe-037f-4c73-9265-bd48c835ac7b" />
 
 <img width="611" height="137" alt="image" src="https://github.com/user-attachments/assets/0deb2549-cad1-455e-a45d-2ebb4e141eb6" />
 
-Load dtata in managed table whre Hive is owner, u don't give location of data
+Load dtata in managed table from hdfs  whre Hive is owner, u don't give location of data
 
 <img width="585" height="178" alt="image" src="https://github.com/user-attachments/assets/bea0d3a6-669a-4437-892a-e5a55370f9bb" />
 
 <img width="289" height="131" alt="image" src="https://github.com/user-attachments/assets/75169a66-2197-4791-bc6f-33366d2c5f7b" />
 
 
+In external table data will not move to hive unlike manage table where we load explicitly to external table
 
+<img width="1168" height="755" alt="image" src="https://github.com/user-attachments/assets/7063f2f2-c4c4-4b68-b083-fa36e1de86ad" />
+
+HIVE  -is on top which runs all below stage
+----
+MAp reduice
+-----
+YARN
+--------
+HDFS
 
 
 
