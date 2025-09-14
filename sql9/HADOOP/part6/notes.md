@@ -16,5 +16,28 @@ Now run query-explain extended <sql_query> to check what are the steps involved
 
 <img width="615" height="344" alt="image" src="https://github.com/user-attachments/assets/2f9f80c2-9284-4885-8992-1d58e8a41e7e" />
 
+craete db using hive
+
+<img width="507" height="33" alt="image" src="https://github.com/user-attachments/assets/8d95e9be-37e5-4cdd-8c34-3855258e712f" />
+
+
+It goes to HDFS and inside hive the DB will be created
+<img width="801" height="436" alt="image" src="https://github.com/user-attachments/assets/4ab07f7e-a884-40f5-a34b-ec81fecf21fa" />
+
+Move hivedataset  from client to hdfs
+
+<img width="486" height="48" alt="image" src="https://github.com/user-attachments/assets/dbbdba9d-b5b8-40d2-bf1d-5e80dedd7e90" />
+
+Now create table inside Hive editor(in same folder query is ther)
+
+
+<img width="644" height="358" alt="image" src="https://github.com/user-attachments/assets/cace1080-1f4b-463d-96e6-78073707792a" />
+
+
+
+
+
+
+
 
 
