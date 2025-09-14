@@ -33,6 +33,10 @@ Now create table inside Hive editor(in same folder query is ther)
 
 <img width="644" height="358" alt="image" src="https://github.com/user-attachments/assets/cace1080-1f4b-463d-96e6-78073707792a" />
 
+External table takes carew of 
+
+<img width="465" height="54" alt="image" src="https://github.com/user-attachments/assets/346e8bbe-037f-4c73-9265-bd48c835ac7b" />
+
 
 
 
