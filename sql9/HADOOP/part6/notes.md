@@ -62,5 +62,5 @@ HDFS
 
 File format example used in HDFS - Apache parquet wher u store data in columnar storage so compression would be easy then ex ion below u can compressed to <electronice,4> as 4 times electronics came 
 
-
+parque also gives serialization and deserialization
 
