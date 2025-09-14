@@ -14,4 +14,7 @@ Now run query-explain extended <sql_query> to check what are the steps involved
 
 <img width="683" height="338" alt="image" src="https://github.com/user-attachments/assets/36147d91-9749-4146-a7d4-c44d5fc00683" />
 
+<img width="615" height="344" alt="image" src="https://github.com/user-attachments/assets/2f9f80c2-9284-4885-8992-1d58e8a41e7e" />
+
+
 
