@@ -30,6 +30,7 @@ Move hivedataset  from client to hdfs
 
 <img width="486" height="48" alt="image" src="https://github.com/user-attachments/assets/dbbdba9d-b5b8-40d2-bf1d-5e80dedd7e90" />
 
+We are trying to implement start schema in hive
 Now create table inside Hive editor(in same folder query is ther)
 
 
@@ -64,3 +65,6 @@ File format example used in HDFS - Apache parquet wher u store data in columnar 
 
 parque also gives serialization and deserialization
 
+Norte - we have implemented sstar schema using hive coz fact_sale table has FK of all dimesion table 
+
+Bits/bytes can be accesed by computer faster
