@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/18AjThKOmNqz2BZAgdnnXOpph6jlp0HEhw8zkORwXzeU/edit?tab=t.0#heading=h.upb400ham5gj
+
 In hive architecture powerbi,tabeleu,python script acn be a client and read req goes to hive server and data comes to client
 
 Example there is a beeline client  and command to connect through beeline client is
