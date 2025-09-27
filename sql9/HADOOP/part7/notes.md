@@ -26,3 +26,11 @@ STATIC PARTITION WILL STORE SUBSET OF DATA (FASTER QUERY)
 <img width="585" height="133" alt="image" src="https://github.com/user-attachments/assets/83133fdc-855d-4e91-bb94-a8da48021456" />
 
 spark is faster compare to map reduce
+
+<img width="633" height="443" alt="image" src="https://github.com/user-attachments/assets/1f10aced-54c4-45ec-bc04-cdbf7aaac3ca" />
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
