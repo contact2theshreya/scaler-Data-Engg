@@ -31,6 +31,3 @@ spark is faster compare to map reduce
 
 ![Uploading image.png…]()
 
-![Uploading image.png…]()
-
-![Uploading image.png…]()
