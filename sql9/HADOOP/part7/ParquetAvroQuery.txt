@@ -1,0 +1,48 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.twitter_data_avro (
+    id                      STRING,
+    user_friends_count      INT,
+    user_location           STRING,
+    user_description        STRING,
+    user_statuses_count     INT,
+    user_followers_count    INT,
+    user_name               STRING,
+    user_screen_name        STRING,
+    created_at              STRING,
+    text                    STRING,
+    retweet_count           BIGINT,
+    retweeted               BOOLEAN,
+    in_reply_to_user_id     BIGINT,
+    source                  STRING,
+    in_reply_to_status_id   BIGINT,
+    media_url_https         STRING,
+    expanded_url            STRING
+)
+STORED AS AVRO
+LOCATION '/user/userjuly2025019/HiveDataSet/TwitterAvro';
+
+
+
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.twitter_data_parquet (
+    id                      STRING,
+    user_friends_count      INT,
+    user_location           STRING,
+    user_description        STRING,
+    user_statuses_count     INT,
+    user_followers_count    INT,
+    user_name               STRING,
+    user_screen_name        STRING,
+    created_at              STRING,
+    text                    STRING,
+    retweet_count           BIGINT,
+    retweeted               BOOLEAN,
+    in_reply_to_user_id     BIGINT,
+    source                  STRING,
+    in_reply_to_status_id   BIGINT,
+    media_url_https         STRING,
+    expanded_url            STRING
+)
+STORED AS PARQUET
+LOCATION '/user/userjuly2025019/HiveDataSet/TwitterParquet';
+

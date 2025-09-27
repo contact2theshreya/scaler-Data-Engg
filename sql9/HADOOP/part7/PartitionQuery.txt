@@ -1,0 +1,157 @@
+
+### Basic Staging 
+
+use djmay2025;
+
+
+CREATE EXTERNAL TABLE djmay2025.post_office_india_staging
+(
+    OFFICE_NAME       STRING,
+    OFFICE_STATUS     STRING,
+    PINCODE           INT,
+    TELEPHONE         BIGINT,
+    TALUK             STRING,
+    DISTRICT          STRING,
+    STATE             STRING,
+    POSTAL_DIVISION   STRING,
+    POSTAL_REGION     STRING,
+    POSTAL_CIRCLE     STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/PostOffice_DataSet/CSV';
+
+
+SELECT COUNT(*) FROM djmay2025.post_office_india_staging WHERE state = 'HARYANA'; 
+
+
+
+### Partitioning
+
+DROP TABLE IF EXISTS djmay2025.post_office_india_partitioned;
+
+CREATE TABLE djmay2025.post_office_india_partitioned
+(
+OFFICE_NAME       STRING,
+OFFICE_STATUS     STRING,
+PINCODE           INT,
+TELEPHONE         BIGINT,
+TALUK             STRING,
+DISTRICT          STRING,
+POSTAL_DIVISION   STRING,
+POSTAL_REGION     STRING,
+POSTAL_CIRCLE     STRING
+)
+PARTITIONED BY (STATE STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+
+INSERT OVERWRITE TABLE djmay2025.post_office_india_partitioned
+PARTITION(STATE)
+SELECT
+OFFICE_NAME,
+OFFICE_STATUS,
+PINCODE,
+TELEPHONE,
+TALUK,
+DISTRICT,
+POSTAL_DIVISION,
+POSTAL_REGION,
+POSTAL_CIRCLE,
+STATE 
+FROM djmay2025.post_office_india_staging;
+
+
+SHOW PARTITIONS djmay2025.post_office_india_partitioned;
+
+
+SELECT COUNT(*) FROM djmay2025.post_office_india_partitioned WHERE state = 'HARYANA';
+
+
+
+### Static Partitioning
+
+
+DROP TABLE IF EXISTS djmay2025.post_office_india_partitioned_static;
+
+CREATE TABLE djmay2025.post_office_india_partitioned_static
+(
+OFFICE_NAME       STRING,
+OFFICE_STATUS     STRING,
+PINCODE           INT,
+TELEPHONE         BIGINT,
+TALUK             STRING,
+DISTRICT          STRING,
+POSTAL_DIVISION   STRING,
+POSTAL_REGION     STRING,
+POSTAL_CIRCLE     STRING
+)
+PARTITIONED BY (STATE STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+
+INSERT OVERWRITE TABLE djmay2025.post_office_india_partitioned_static
+PARTITION(STATE='HARYANA')
+SELECT
+OFFICE_NAME,
+OFFICE_STATUS,
+PINCODE,
+TELEPHONE,
+TALUK,
+DISTRICT,
+POSTAL_DIVISION,
+POSTAL_REGION,
+POSTAL_CIRCLE
+FROM
+djmay2025.post_office_india_staging
+WHERE
+STATE = 'HARYANA';
+
+
+SHOW PARTITIONS djmay2025.post_office_india_partitioned_static;
+
+
+SELECT COUNT(*) FROM djmay2025.post_office_india_partitioned_static WHERE STATE = 'HARYANA';
+
+
+-- Bucketing Data 
+
+CREATE TABLE djmay2025.post_office_india_bucketed
+(
+    OFFICE_NAME       STRING,
+    OFFICE_STATUS     STRING,
+    PINCODE           INT,
+    STATE             STRING,
+    TELEPHONE         BIGINT,
+    TALUK             STRING,
+    DISTRICT          STRING,
+    POSTAL_DIVISION   STRING,
+    POSTAL_REGION     STRING,
+    POSTAL_CIRCLE     STRING
+)
+CLUSTERED BY (PINCODE) INTO 4 BUCKETS
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+INSERT OVERWRITE TABLE djmay2025.post_office_india_bucketed
+SELECT
+OFFICE_NAME,
+OFFICE_STATUS,
+PINCODE,
+TELEPHONE,
+TALUK,
+DISTRICT,
+POSTAL_DIVISION,
+POSTAL_REGION,
+POSTAL_CIRCLE,
+STATE 
+FROM djmay2025.post_office_india_staging;
+
+
+

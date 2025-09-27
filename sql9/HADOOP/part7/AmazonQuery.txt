@@ -1,0 +1,98 @@
+
+beeline -u jdbc:hive2://localhost:10000 -n userjuly2025019 -p Bigdatalab123$
+
+
+`dim_date`
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.dim_date (
+    date_key INT,
+    full_date DATE,
+    week_number INT,
+    month INT,
+    year INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/Amazon_DataSet/date'
+tblproperties ("skip.header.line.count"="1");
+```
+
+
+
+`dim_geography`
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.dim_geography (
+    geography_key INT,
+    city STRING,
+    state STRING,
+    country STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/Amazon_DataSet/geography'
+tblproperties ("skip.header.line.count"="1");
+```
+
+
+
+`dim_customer`
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.dim_customer (
+    customer_key INT,
+    customer_name STRING,
+    join_date DATE
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/Amazon_DataSet/customer'
+tblproperties ("skip.header.line.count"="1");
+```
+
+
+
+`dim_product`
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.dim_product (
+   product_key INT,
+   product_name STRING,
+   product_type STRING,
+   genre STRING,
+   publisher_name STRING,
+   price DECIMAL(10, 2)
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/Amazon_DataSet/product'
+tblproperties ("skip.header.line.count"="1");
+```
+
+
+
+`fact_sales`
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS djmay2025.fact_sales (
+    date_key INT,
+    product_key INT,
+    customer_key INT,
+    geography_key INT,
+    quantity_sold INT,
+    sale_amount DECIMAL(10, 2)
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/userjuly2025019/HiveDataSet/Amazon_DataSet/sales'
+tblproperties ("skip.header.line.count"="1");
+```
+
+
+
