@@ -95,3 +95,11 @@ Ingestion layer collects data from different sources and tranfer it or store it 
 
 Data ingestion and intergration is part of ingestion layer which is used to ingest data from different sources to the data lake.
 
+
+<img width="1106" height="311" alt="image" src="https://github.com/user-attachments/assets/d2d78b06-ce1d-4df5-97ee-21e83d8f1c26" />
+
+
+<img width="1161" height="327" alt="image" src="https://github.com/user-attachments/assets/b1881c6d-704c-4e43-bb81-4eb2eb482e63" />
+
+
+<img width="980" height="239" alt="image" src="https://github.com/user-attachments/assets/f9be4f8f-960c-41af-bf7e-4bddbd93b38d" />
