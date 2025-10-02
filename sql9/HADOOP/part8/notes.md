@@ -30,6 +30,38 @@ In meta source of data lake I need schema and schema is present in glue which li
 
 <img width="452" height="300" alt="image" src="https://github.com/user-attachments/assets/cf99f0f5-12a4-4669-9762-f134a05a1458" />
 
+Distribution key
+
+A method in AWS Redshift to distribute data across nodes for parallel processing.
+
+Sort key
+
+AWS Redshift method to define how data is ordered within each node.
+
+AWS Redshift
+
+A fully managed data warehouse service from Amazon.
+
+Dynamo db
+
+Managed NoSQL database service on AWS for semi-structured data.
+
+AWS Glue
+
+ETL service from AWS that automates the process of data cataloging and processing.
+
+AWS Athena
+
+Serverless query service to analyze data in Amazon S3 using SQL.
+
+Data Governance
+
+Policies and procedures to manage data availability, usability, and security.
+
+Auto Distribution Style
+
+AWS Redshift feature that adjusts data distribution strategy based on workload.
+
 
 
 
