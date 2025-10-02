@@ -63,5 +63,35 @@ Auto Distribution Style
 AWS Redshift feature that adjusts data distribution strategy based on workload.
 
 
+<img width="2182" height="394" alt="image" src="https://github.com/user-attachments/assets/e56f7dcc-1982-4678-9e9d-6b8168e01a36" />
 
+ Correct Answer: It can support scaling and storing real time data but latency is high
+
+NoSQL can support scaling and can also store real time data but latency is very high to in real time data streaming latency should
+be minimum so that the analysis will be on real time as well.
+
+Other options given are the limitations of other databases and not of NoSQL
+
+
+Correct Answer: It is the process of moving data from different sources into the Data lake.
+
+Ingestion layer collects data from different sources and tranfer it or store it in the data lake.
+
+
+<img width="1151" height="359" alt="image" src="https://github.com/user-attachments/assets/f906af61-350f-41b8-a2ae-29da03364ca2" />
+
+
+<img width="1145" height="331" alt="image" src="https://github.com/user-attachments/assets/29d7c831-0b76-4aea-be25-662542f806ac" />
+
+
+<img width="1139" height="208" alt="image" src="https://github.com/user-attachments/assets/08f85f7b-3448-4094-b1f5-d1a2385ccb6a" />
+
+
+<img width="1125" height="401" alt="image" src="https://github.com/user-attachments/assets/3adf2949-ebb5-416c-a9f8-a49716fb9a78" />
+
+
+
+<img width="923" height="405" alt="image" src="https://github.com/user-attachments/assets/be06e008-fbac-4390-a60c-0ce0abb0df1e" />
+
+Data ingestion and intergration is part of ingestion layer which is used to ingest data from different sources to the data lake.
 
