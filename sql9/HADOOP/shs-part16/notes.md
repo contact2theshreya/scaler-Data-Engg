@@ -83,3 +83,32 @@ Salting - Technique to manage skewed data distribution by introducing fake keys 
 Repartition - Adjusts the number of partitions of an RDD to balance workload evenly across nodes
 
 Coalesce - Reduces the number of partitions in an RDD, typically for narrowing transformations
+////////////
+
+No job will be created as we are not asking to infer schema(tell spaerk to identify schema as u don’t know)
+
+<img width="274" height="107" alt="image" src="https://github.com/user-attachments/assets/f678a8b4-1b0f-4aab-941e-ba90e8a9270c" />
+
+Run pyspark – to see spark jobs
+
+<img width="452" height="49" alt="image" src="https://github.com/user-attachments/assets/c9b92641-fee9-4b03-8a9b-68df406c5e0e" />
+
+
+
+As collect is an action so it should trigerred job
+Withcolumn is narrow transformation,u don’t need to shufflre data
+Join requires shuffle coz keys can be in 2 diff partition so first bring them in 1 partition to join them
+Show()-trigger job
+If we broadcast large df in driver it ill try to searilice and memory will go ,collect(),topandas() will agin serialize in driver
+
+User defined function – when u do something which is not inbuilt in spark
+Ex-adding column(done by UDF) in this case it uses user memory
+Off heap memory is not a part of heap memory so GC doesn’t work on off heap memory so it is ur responsibility to remove it
+
+We don’t shuffle data inside 1 stage, u create a stage if it requires shuffling
+Wscg – tungsten engine takes stage 1 and generate wscg(byrte code-compiled code)
+
+ and catalyst optimize – plan generation
+
+<img width="451" height="450" alt="image" src="https://github.com/user-attachments/assets/c4eb26da-f19d-41d6-ab18-3cfda7108a89" />
+
