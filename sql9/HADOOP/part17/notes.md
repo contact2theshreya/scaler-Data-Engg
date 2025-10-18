@@ -1,3 +1,31 @@
+Fraction cache – cache only some partition
+Cache is always inmemory if u want to store it on disk then persiste(storage level=disk)
+Memory – RAM
+Heap and off heap will be in ram
+Unpersist – clean up memory
+If DF is being read two times then it gets cached
+Once u write after aggregation then DAG completes
+Executor is nothing but partition
+
+Spark creates 200 partition by default
+Before join do shuffling between partition to bring id in same partition
+For less datat it usus some partition and rest of them will be empty
+1 partition gets 1 core for execution
+
+If u do broadcasting-then in all partition they will have same datat then u an avoid shuffling during join and partition wilol not be 200
+
+Before writing to file apply collesce that is writing to file the partition which has data
+
+/////////
+
+
+
+
+![Uploading image.png…]()
+
+
+
+
 Introduction
 Welcome to today's session! In this class, we discussed partition management in Apache Spark, focusing on operations like coalesce, repartition, caching strategies, broadcasting in join operations, and practical optimizations.【6:0†transcript.txt】
 
