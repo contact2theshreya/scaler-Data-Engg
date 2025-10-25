@@ -25,3 +25,25 @@ Error Handling 	Errors are detected and corrected after processing is complete. 
 
 
 <img width="451" height="702" alt="image" src="https://github.com/user-attachments/assets/d6217728-3581-4298-9b2c-27cffeda7193" />
+
+Zepto is an e-commerce platform for purchasing groceries and coffee, used as a case study.
+
+Spark stream - A component of Apache Spark that enables processing of real-time data streams.
+
+Parquet - A columnar storage file format optimized for use with big data processing frameworks.
+
+Medallion Architecture. -An architecture pattern using layers like raw, bronze, silver, and gold data for structured data processing.
+
+Spark Script for Order Details
+	•	Objective: Track order details to manage logistics and perform comprehensive data analysis on revenue streams by considering different parameters such as category and city-wise data splits【4:0†source】 .
+	•	Procedure:
+	1	Data Source Initialization:
+	▪	Use PySpark to establish a Spark session.
+	▪	Configure Kafka as a data broker for streaming data【4:0†source】 .
+	2	Data Transformation:
+	▪	Deserialization: Convert streaming data from JSON strings to structured formats using predefined schemas (event type, order ID, user ID, etc.)【4:17†source】 .
+	▪	Use Spark functions like explode to flatten nested data structures for further analysis【4:4†source】 .
+	3	Data Storage:
+	▪	Store transformed data into Hadoop Distributed File System (HDFS) in Parquet format, enabling efficient querying and data analysis .
+	4	SQL Analysis:
+	▪	Execute SQL queries on Parquet files to derive insights on sales trends such as revenue, order distribution, and customer preferences【4:0†source】 .
